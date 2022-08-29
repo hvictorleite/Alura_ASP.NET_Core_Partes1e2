@@ -17,7 +17,8 @@ namespace CasaDoCodigo
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Produto>().HasKey(p => p.Id);
+            modelBuilder.Entity<Produto>()
+                .HasKey(p => p.Id);
         }
     }
 }
