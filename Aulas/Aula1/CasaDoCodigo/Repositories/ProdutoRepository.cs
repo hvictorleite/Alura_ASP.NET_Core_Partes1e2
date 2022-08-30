@@ -23,5 +23,10 @@ namespace CasaDoCodigo.Repositories
             }
             contexto.SaveChanges();
         }
+
+        public IList<Produto> GetProdutos()
+        {
+            return contexto.Set<Produto>().ToList();
+        }
     }
 }
